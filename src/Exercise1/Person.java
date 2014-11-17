@@ -18,4 +18,7 @@ public class Person{
 	public void printName() {
 		System.out.println("My name is: " + this.name);	
 	}
+	public String getName() {
+		return name;
+	}
 }

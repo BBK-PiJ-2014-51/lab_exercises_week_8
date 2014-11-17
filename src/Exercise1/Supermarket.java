@@ -42,5 +42,16 @@ public class Supermarket implements PersonQueue{
 		this.queueLength--;
 		return nextInLine;
 	}
-}
 	
+	public void addPerson(Person person){
+		this.insert(person);
+		System.out.println(person.getName() + " is in the queue.");
+	}
+	
+	public Person servePerson(){
+		Person person = this.retrieve();
+		System.out.println("Serving " + person.getName());
+		return person;
+	}
+	
+}
