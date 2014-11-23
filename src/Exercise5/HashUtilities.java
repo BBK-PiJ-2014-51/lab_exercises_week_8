@@ -5,11 +5,10 @@ public class HashUtilities{
 	public static int shortHash(int num){
 		num = Math.abs(num);
 		while (num <= 1000){
-			num *= (int) (Math.random() * 113);
+			num *= 17;
 		}
 		while (num > 1000){
-			num /= 11;
-			num *= 3;
+			num %= 997;
 		}
 		return num;
 	}
