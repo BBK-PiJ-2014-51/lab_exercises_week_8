@@ -7,6 +7,7 @@ public class Node{
 	public Node(int key, String name){
 		this.key = key;
 		this.name = name;
+		next = null;
 	}
 	
 	public int getKey(){
