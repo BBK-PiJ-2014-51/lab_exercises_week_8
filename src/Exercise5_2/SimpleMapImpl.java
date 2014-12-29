@@ -53,15 +53,15 @@ public class SimpleMapImpl implements SimpleMap{
 				Node newList = null;
 				Node currentNode = buckets[i];
 				while (currentNode != null){
-					if (currentNode.getName() != name){
+					if (!currentNode.getName().equals(name)){
 						if(newList == null){
-							newList = currentNode;
+							newList = new Node(currentNode.getKey(), currentNode.getName());
 						} else {
 							Node lastNode = newList;
 							while(lastNode.getNext() != null){
 								lastNode = lastNode.getNext();
 							}
-							lastNode.setNext(currentNode);
+							lastNode.setNext(new Node(currentNode.getKey(), currentNode.getName()));
 						}
 					}
 					currentNode = currentNode.getNext();
