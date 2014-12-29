@@ -15,9 +15,8 @@ public class Exercise4_2{
 		store.addPerson(new Person("Tom", 6));
 		store.addPerson(new Person("Beth", 111));
 		store.addPerson(new Person("Kate", 33));
-		store.servePerson();
-		store.servePerson();
-		store.servePerson();
-		store.servePerson();
+		for (int i = 0; i < 12; i++){
+			store.servePerson();
+		}
 	}
 }
