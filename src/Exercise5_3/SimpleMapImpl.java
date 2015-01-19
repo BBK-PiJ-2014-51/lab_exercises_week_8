@@ -1,4 +1,4 @@
-package Exercise5_2;
+package Exercise5_3;
 public class SimpleMapImpl implements SimpleMap{
 	Node[] buckets = new Node[10];
 	int numBuckets = 0;

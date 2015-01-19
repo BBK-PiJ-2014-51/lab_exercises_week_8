@@ -1,4 +1,4 @@
-package Exercise5_2;
+package Exercise5_3;
 /**
 * Map from integer to Strings: one to many
 */
